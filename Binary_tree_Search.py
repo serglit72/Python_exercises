@@ -88,8 +88,7 @@ class Tree(object):
             self.set_root(value)
             return
         #otherwise we use a recursion here
-        else:
-            self.insert_with_recursion(self.get_root(), Node(value))
+        self.insert_with_recursion((self.get_root()), Node(value))
 
     def insert_recursively(self, node, new_node):
         compare_result =  self.compare(node,new_node) 
